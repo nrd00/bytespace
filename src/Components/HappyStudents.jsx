@@ -1,6 +1,6 @@
 
 
-const HappyStudents = () => {
+const HappyStudents = ({className='bg-white'}) => {
   const avatars = [
     "https://i.pravatar.cc/100?img=12",
     "https://i.pravatar.cc/100?img=32",
@@ -12,7 +12,7 @@ const HappyStudents = () => {
   ];
 
   return (
-    <div className="w-fit rounded-2xl bg-white px-4 py-3 shadow-lg">
+    <div className={`w-fit rounded-2xl ${className} px-4 py-3 shadow-lg`}>
       <p className="text-sm font-medium text-gray-800">
         Happy Students
       </p>
